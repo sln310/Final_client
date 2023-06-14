@@ -47,7 +47,7 @@ export const CreateRecipe = () => {
         }
       );
 
-      alert("Recipe Created");
+      alert("Created");
       navigate("/");
     } catch (error) {
       console.error(error);
