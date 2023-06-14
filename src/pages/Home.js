@@ -69,6 +69,7 @@ export const Home = () => {
             </div>
             <div className="instructions">
               <p>{recipe.instructions}</p>
+              <p>{recipe.ingredients}</p>
             </div>
             <img src={recipe.imageUrl} alt={recipe.name} />
             <p>Time: {recipe.cookingTime} minutes</p>
