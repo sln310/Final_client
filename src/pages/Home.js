@@ -54,7 +54,7 @@ export const Home = () => {
 
   return (
     <div>
-      <h1>Recipes</h1>
+      <h1>Graphics</h1>
       <ul>
         {recipes.map((recipe) => (
           <li key={recipe._id}>
@@ -71,7 +71,7 @@ export const Home = () => {
               <p>{recipe.instructions}</p>
             </div>
             <img src={recipe.imageUrl} alt={recipe.name} />
-            <p>Cooking Time: {recipe.cookingTime} minutes</p>
+            <p>Time: {recipe.cookingTime} minutes</p>
           </li>
         ))}
       </ul>

@@ -9,7 +9,7 @@ export const CreateRecipe = () => {
   const [cookies, _] = useCookies(["access_token"]);
   const [recipe, setRecipe] = useState({
     name: "",
-    description: "",
+    // description: "",
     ingredients: [],
     instructions: "",
     imageUrl: "",
@@ -56,7 +56,7 @@ export const CreateRecipe = () => {
 
   return (
     <div className="create-recipe">
-      <h2>Create Recipe</h2>
+      <h2>Create Post</h2>
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name</label>
         <input
@@ -66,14 +66,14 @@ export const CreateRecipe = () => {
           value={recipe.name}
           onChange={handleChange}
         />
-        <label htmlFor="description">Description</label>
+        {/* <label htmlFor="description">Description</label>
         <textarea
           id="description"
           name="description"
           value={recipe.description}
           onChange={handleChange}
-        ></textarea>
-        <label htmlFor="ingredients">Ingredients</label>
+        ></textarea> */}
+        <label htmlFor="ingredients">Tools</label>
         {recipe.ingredients.map((ingredient, index) => (
           <input
             key={index}
@@ -86,7 +86,7 @@ export const CreateRecipe = () => {
         <button type="button" onClick={handleAddIngredient}>
           Add Ingredient
         </button>
-        <label htmlFor="instructions">Instructions</label>
+        <label htmlFor="instructions">Description</label>
         <textarea
           id="instructions"
           name="instructions"
@@ -101,7 +101,7 @@ export const CreateRecipe = () => {
           value={recipe.imageUrl}
           onChange={handleChange}
         />
-        <label htmlFor="cookingTime">Cooking Time (minutes)</label>
+        <label htmlFor="cookingTime">Time (minutes)</label>
         <input
           type="number"
           id="cookingTime"
@@ -109,7 +109,7 @@ export const CreateRecipe = () => {
           value={recipe.cookingTime}
           onChange={handleChange}
         />
-        <button type="submit">Create Recipe</button>
+        <button type="submit">Create Post</button>
       </form>
     </div>
   );
