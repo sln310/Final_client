@@ -84,7 +84,7 @@ export const CreateRecipe = () => {
           />
         ))}
         <button type="button" onClick={handleAddIngredient}>
-          Add Ingredient
+          Add Tools
         </button>
         <label htmlFor="instructions">Description</label>
         <textarea
