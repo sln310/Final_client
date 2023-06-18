@@ -16,8 +16,9 @@ https://final-client-two.vercel.app/
 
 - Users can view graphics that someone has posted.
 - Users can view detailed information about graphics.
+- Users can save graphics as favorites.
 - Users can create them posts.
-- Reviews are tied to user accounts.
+- Favourites are linked to user accounts.
 - User authentication and routing.
 
 ### Prepare the application
