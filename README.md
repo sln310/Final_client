@@ -1,6 +1,6 @@
 ## What is this?
 
-This application allows users to view, create, and favorite for graphics.
+This application allows users to view, post, and favorites graphics.
 
 https://final-client-two.vercel.app/
 
